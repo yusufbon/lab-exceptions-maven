@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 
 /**
  * A simple set of utilities for dealing with input and output.
- * 
+ *
  * @author Samuel A. Rebelsky
  * @author Your Name Here
  * @author Your Name Here
@@ -13,10 +13,20 @@ import java.io.PrintWriter;
 public class IOUtils {
   /**
    * Prompt for and read an integer.
+   *
+   * @param pw
+   *   The PrintWriter used for printing prompts.
+   * @param br
+   *   The BufferedReader used for reading responses.
+   * @param prompt
+   *   The prompt to print. Set to null if you want no prompt printed.
+   *
+   * @return
+   *   The integer read.
    */
   public static int readInt(PrintWriter pw, BufferedReader br, String prompt)
       throws Exception {
-    if (!prompt.equals("")) {
+    if (prompt != null) {
       pw.print(prompt);
       pw.flush();
     } // if there is a prompt

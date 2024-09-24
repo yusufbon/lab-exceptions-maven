@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 
 /**
  * Interactively compute quadratic roots.
- * 
+ *
  * @author Samuel A. Rebelsky
  * @author Your Name Here
  * @author Your Name Here

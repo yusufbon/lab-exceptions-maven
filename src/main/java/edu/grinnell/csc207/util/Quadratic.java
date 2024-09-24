@@ -33,11 +33,18 @@ public class Quadratic {
 
   /**
    * Create a new quadratic.
+   *
+   * @param squared
+   *   The coefficient of the squared term.
+   * @param linear
+   *   The coefficient of the linear term.
+   * @param constant
+   *   The constant.
    */
-  public Quadratic(double a, double b, double c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
+  public Quadratic(double squared, double linear, double constant) {
+    this.a = squared;
+    this.b = linear;
+    this.c = constant;
   } // Quadratic(double, double, double)
 
   // +------------------+--------------------------------------------
@@ -60,6 +67,9 @@ public class Quadratic {
   /**
    * Build a string that shows the expression with a particular value.
    *
+   * @param val
+   *   The value we incorporate in the expression.
+   *
    * @return the expression as a string
    */
   public String toString(double val) {
@@ -68,6 +78,9 @@ public class Quadratic {
 
   /**
    * Evaluate the quadratic on a value.
+   *
+   * @param x
+   *   The value on which to evaluate the quadratic.
    *
    * @return the value
    */
