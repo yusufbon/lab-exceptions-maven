@@ -42,7 +42,7 @@ public class TestQuadratic {
   public void testRootsAll() {
     assertEquals(1, (new Quadratic(1, -2, 1)).smallerRoot(), 0.001,
         "The smaller root of x^2 - 2x + 1 is 1");
-        assertEquals(-1, (new Quadratic(1, 2, 1)).smallerRoot(), 0.001,
+    assertEquals(-1, (new Quadratic(1, 2, 1)).smallerRoot(), 0.001,
         "The smaller root of x^2 + 2x + 1 is -1");
   } // testRootsNoC()
 

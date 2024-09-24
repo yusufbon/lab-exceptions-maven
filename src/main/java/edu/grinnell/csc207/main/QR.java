@@ -1,5 +1,6 @@
 package edu.grinnell.csc207.main;
 
+import edu.grinnell.csc207.util.IOUtils;
 import edu.grinnell.csc207.util.Quadratic;
 
 import java.io.BufferedReader;
@@ -27,7 +28,13 @@ public class QR {
     PrintWriter pen = new PrintWriter(System.out, true);
     BufferedReader eyes = new BufferedReader(new InputStreamReader(System.in));
 
-    // ...
+    pen.print("Please input integers for the quadratic equation a * x^2 + b * x + c.\n");
+    int a = IOUtils.readInt(pen, eyes, "Please enter an integer for coefficient a: ");
+    int b = IOUtils.readInt(pen, eyes, "Please enter an integer for coefficient b: ");
+    int c = IOUtils.readInt(pen, eyes, "Please enter an integer for coefficient c: ");
+
+    Quadratic e = new Quadratic(a,b,c);
+    pen.printf("The lower root of equation %s is %f\n", e.toString(), e.smallerRoot());
 
     eyes.close();
     pen.close();
