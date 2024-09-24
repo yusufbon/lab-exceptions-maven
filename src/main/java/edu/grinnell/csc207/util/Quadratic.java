@@ -95,7 +95,7 @@ public class Quadratic {
    *   is only one).
    */
   public double smallerRoot() {
-    return 0.0; // STUB
+    return (-this.b - Math.sqrt(Math.pow(b, 2) - 4 * this.a * this.c)) / (2 * this.a);
   } // smallerRoot
 
   /**
