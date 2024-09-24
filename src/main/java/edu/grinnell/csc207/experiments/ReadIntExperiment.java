@@ -20,7 +20,7 @@ public class ReadIntExperiment {
     BufferedReader eyes = new BufferedReader(new InputStreamReader(System.in));
 
     int i = IOUtils.readInt(pen, eyes, "Please enter an integer: ");
-    pen.printf("%d square is %d\n", i, i*i);
+    pen.printf("%d squared is %d\n", i, i*i);
 
     eyes.close();
     pen.close();
