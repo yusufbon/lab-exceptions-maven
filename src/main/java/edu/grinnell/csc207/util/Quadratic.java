@@ -15,17 +15,17 @@ public class Quadratic {
   /**
    * The coefficient of the x^2 component.
    */
-  double a;
+  int a;
 
   /**
    * The coefficient of the x component.
    */
-  double b;
+  int b;
 
   /**
    * The constant.
    */
-  double c;
+  int c;
 
   // +--------------+------------------------------------------------
   // | Constructors |
@@ -41,11 +41,11 @@ public class Quadratic {
    * @param constant
    *   The constant.
    */
-  public Quadratic(double squared, double linear, double constant) {
+  public Quadratic(int squared, int linear, int constant) {
     this.a = squared;
     this.b = linear;
     this.c = constant;
-  } // Quadratic(double, double, double)
+  } // Quadratic(int, int, int)
 
   // +------------------+--------------------------------------------
   // | Standard Methods |
@@ -72,7 +72,7 @@ public class Quadratic {
    *
    * @return the expression as a string
    */
-  public String toString(double val) {
+  public String toString(int val) {
     return String.format("%d*%d^2 + %d*%d + %d", a, val, b, val, c);
   } // toString(double)
 
@@ -84,7 +84,7 @@ public class Quadratic {
    *
    * @return the value
    */
-  public double evaluate(double x) {
+  public int evaluate(int x) {
     return this.a * x * x + this.b * x + this.c;
   } // evaluate(double)
 
@@ -95,7 +95,7 @@ public class Quadratic {
    *   is only one).
    */
   public double smallerRoot() {
-    return 0; // STUB
+    return 0.0; // STUB
   } // smallerRoot
 
   /**
@@ -105,6 +105,6 @@ public class Quadratic {
    *   is only one).
    */
   public double largerRoot() {
-    return 0; // STUB
+    return 0.0; // STUB
   } // largerRoot
 } // class Quadratic
